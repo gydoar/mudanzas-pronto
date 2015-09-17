@@ -40,6 +40,7 @@ ul.icon-contact{
 .menu{
 	background: #37353a;
 	text-align: right;
+	box-shadow: 0px 4px 10px #000;
 }
 .menu ul{
 	padding-top: 10px;
@@ -316,4 +317,14 @@ footer{
 }
 ul.ciudades{
 	list-style-image: url(../images/icon-ciudades.png);
+	font-family: 'Play', sans-serif;
+}
+.tipos-mudanzas{
+	border-top: 1px solid #d0d0d1;
+}
+.tipos-mudanzas a.ver-mas p{
+	color: #ff3336;
+}
+.page a.bottom{
+	float: right;
 }
