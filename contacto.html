@@ -75,14 +75,14 @@
       <div class="row">
          <div class="six columns">
         
-        <form action="" method="post">
+        <form action="send.php" method="post">
           <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
           <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
           <input type="text" name="email" id="email" placeholder="Email" required>
       </div>
       <div class="six columns">
           <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="500"></textarea>
           <input type="submit" value="Enviar">
         </form>
       </div>
