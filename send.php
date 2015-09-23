@@ -18,9 +18,9 @@
 	// Return errors if present
 	$errors = "";
 	
-	if($name =='') { $errors .= "nombre_txt,"; }
-	if(valid_email($email)==FALSE) { $errors .= "email_txt,"; }
-	if($comentarios =='') { $errors .= "comentarios_txa,"; }
+	if($name =='') { $errors .= "nombre,"; }
+	if(valid_email($email)==FALSE) { $errors .= "email,"; }
+	if($comentarios =='') { $errors .= "comentarios,"; }
 
 	// Send email
 	if($errors =='') {
@@ -32,8 +32,7 @@
 		$message="Nombre: $name \n\nEmail: $email \n\nTel: $tel \n\nAsunto: $asunto \n\nComentarios:\n\n $comentarios";
 	
 		mail($to, $email_subject, $message, $headers);
-		echo "true<br>";
-		print("Tu mensaje ha sido enviado con Exito, Pronto nos comunicaremos contigo");	
+		header('Location: /gracias.html');	
 	} else {
 		echo $errors;
 	}
