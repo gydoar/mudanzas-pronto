@@ -47,10 +47,8 @@
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
+	background: #f51f23;
+	position: relative;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
@@ -76,4 +74,7 @@
 .owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
+}
+.owl-pagination{
+	margin-top: -40px;
 }

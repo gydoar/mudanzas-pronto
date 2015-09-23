@@ -30,6 +30,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  
+
 </head>
 <body>
 
@@ -178,6 +180,7 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/jquery.meanmenu.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script>
     $(document).ready(function() {
@@ -188,7 +191,7 @@
           slideSpeed : 300,
           paginationSpeed : 400,
           singleItem:true,
-          pagination:false
+          autoPlay:true
      
           // "singleItem:true" is a shortcut for:
           // items : 1, 
@@ -201,11 +204,9 @@
      
     });
   </script>
-
-  <script src="js/jquery.meanmenu.js"></script>
   <script>
-    jQuery(document).ready(function () {
-        $('nav ul').meanmenu();
+    $(document).ready(function() {
+        $('.menu ul').meanmenu();
     });
   </script>
 </body>
