@@ -1,7 +1,7 @@
 <?
 
 	// Replace this with your own email address
-	$to="handresvegarodriguez@gmail.com";
+	$to="info@mudanzaspronto.com";
 
 	// Extract form contents
 	$name = $_POST['nombre'];
